@@ -1,4 +1,4 @@
-package com.impex.mahalaxmicalendar;
+package com.impex.mahalaxmicalendar.Activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,6 +6,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.WindowManager;
+
+import com.impex.mahalaxmicalendar.R;
+import com.impex.mahalaxmicalendar.database.Helper;
 
 public class SplashActivity extends AppCompatActivity {
 
@@ -19,9 +22,9 @@ public class SplashActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                /*Intent i=new Intent(MainActivity.this,SecondActivity.class);
+                Intent i=new Intent(SplashActivity.this,DashboardActivity.class);
                 startActivity(i);
-                finish();*/
+                finish();
             }
         }, SPLASH_SCREEN_TIME_OUT);
     }
