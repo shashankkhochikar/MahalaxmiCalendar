@@ -19,9 +19,9 @@
         app:titleTextColor="@android:color/white">
 
     </androidx.appcompat.widget.Toolbar>
-    <ScrollView
+    <!--<ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent">-->
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -31,6 +31,7 @@
             <RelativeLayout
                 android:id="@+id/relativeLayoutMonthName"
                 android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
                 android:layout_height="50dp"
                 android:layout_below="@+id/toolbar"
                 android:background="@drawable/layer_list_month_name">
@@ -73,18 +74,33 @@
                     android:layout_margin="8dp"
                     android:background="@drawable/layer_list_forward_arrow" />
             </RelativeLayout>
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical">
 
-            <GridLayout
+
+
+                </LinearLayout>
+            <GridView
                 android:id="@+id/calendarLayout"
-                android:background="@color/faintBlue"
+                android:background="@color/white"
                 android:paddingRight="@dimen/padding_right_grid"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_margin="@dimen/layout_argin"
-                android:columnCount="6"/>
+                android:numColumns="6"
+                android:gravity="center"
+                android:stretchMode="columnWidth"/>
+            </LinearLayout>
+
 
         </LinearLayout>
 
-    </ScrollView>
+    <!--</ScrollView>-->
 
 </LinearLayout>

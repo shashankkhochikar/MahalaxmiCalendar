@@ -5,18 +5,9 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
 
-import com.impex.mahalaxmicalendar.database.Database.TableAmavasyaPurnima;
 import com.impex.mahalaxmicalendar.database.Database.TableCollectiveDataSheet;
-import com.impex.mahalaxmicalendar.database.Database.TableDurgashtmi;
-import com.impex.mahalaxmicalendar.database.Database.TableEkadashi;
 import com.impex.mahalaxmicalendar.database.Database.TableMonthDetails;
-import com.impex.mahalaxmicalendar.database.Database.TableMuhurtas;
 import com.impex.mahalaxmicalendar.database.Database.TableNotes;
-import com.impex.mahalaxmicalendar.database.Database.TableNotification;
-import com.impex.mahalaxmicalendar.database.Database.TablePanchang;
-import com.impex.mahalaxmicalendar.database.Database.TableRashibhavishya;
-import com.impex.mahalaxmicalendar.database.Database.TableReminder;
-import com.impex.mahalaxmicalendar.database.Database.TableSankashti;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;

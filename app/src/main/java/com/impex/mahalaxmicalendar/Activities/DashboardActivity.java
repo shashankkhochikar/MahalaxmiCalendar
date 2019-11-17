@@ -31,11 +31,8 @@ public class DashboardActivity extends AppCompatActivity {
         getSupportActionBar().setTitle("");
         getSupportActionBar().setIcon(R.drawable.logo_blue2);
 
-        getDbHelper();
     }
-    public final Helper getDbHelper() {
-        return Helper.getInstance(this);
-    }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
